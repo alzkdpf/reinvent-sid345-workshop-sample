@@ -1,28 +1,61 @@
-# SID345: A Busy Engineer's Guide to the AWS Encryption SDK
+# reinvent-sid345-workshop-sample
 
-In this workshop, you will add encryption and decryption features to a simple web application that
-sends form data over Amazon SQS. 
+This is a sample application for use in a re:Invent 2017 workshop. It includes an initial skeleton application and exercises to add encryption using the AWS Encryption SDK to the application.
 
-First, you'll enable encryption by calling KMS directly, then, you'll change your code to use the
-Encryption SDK to call KMS for you. You will also add data key caching to reduce calls to KMS call
-overhead and an encryption context. The encryption context is non-secret data that you can use for
-tracking and auditing, verifying the identity of an encrypted message, and as a condition for grants
-and policies.
+## Overview
 
-# Getting started
+- Repository: [alzkdpf/reinvent-sid345-workshop-sample](https://github.com/alzkdpf/reinvent-sid345-workshop-sample)
+- Visibility: Public
+- Last updated: 2018-08-01
+- Main stack: JavaScript
 
-Instructions on how to set up (and to shut down) the example application, as well as the actual exercises
-can be [found here](http://sid345.reinvent-workshop.com), or in the 'exercises' branch of this repository.
+## Project Structure
 
-# License information
+```text
+.github/PULL_REQUEST_TEMPLATE.md
+.gitignore
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE.txt
+NOTICE.txt
+README.md
+bootstrap.yaml
+cloudformation.yaml
+deploy-plugin/pom.xml
+pom.xml
+settings.xml
+static-assets/css/bootstrap-grid.css
+static-assets/css/bootstrap-grid.css.map
+static-assets/css/bootstrap-grid.min.css
+static-assets/css/bootstrap-grid.min.css.map
+static-assets/css/bootstrap-reboot.css
+static-assets/css/bootstrap-reboot.css.map
+static-assets/css/bootstrap-reboot.min.css
+static-assets/css/bootstrap-reboot.min.css.map
+static-assets/css/bootstrap.css
+static-assets/css/bootstrap.css.map
+static-assets/css/bootstrap.min.css
+static-assets/css/bootstrap.min.css.map
+static-assets/index.html
+static-assets/js/bootstrap.bundle.js
+static-assets/js/bootstrap.bundle.js.map
+static-assets/js/bootstrap.bundle.min.js
+static-assets/js/bootstrap.bundle.min.js.map
+static-assets/js/bootstrap.js
+static-assets/js/bootstrap.js.map
+static-assets/js/bootstrap.min.js
+static-assets/js/bootstrap.min.js.map
+static-assets/js/jquery.min.js
+static-assets/js/npm.js
+static-assets/js/popper.min.js
+webapp/pom.xml
+```
 
-Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+## Getting Started
 
-Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
-the License. A copy of the License is located at
+Clone the repository and inspect the tracked files for the current workflow.
 
-  http://aws.amazon.com/apache2.0/
+## Notes
 
-or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions
-and limitations under the License.
+- This README was generated from the repository metadata and file structure.
+- Update this document when setup steps, deployment targets, or project ownership changes.
